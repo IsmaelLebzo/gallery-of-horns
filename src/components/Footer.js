@@ -1,10 +1,8 @@
-import React from 'react'
+import React from "react";
 
 class Footer extends React.Component {
-    render() {
-        return (
-            <h3>Author: Ismael Ramadan</h3>
-        )
-    }
+  render() {
+    return <h3>Author: Ismael Ramadan</h3>;
+  }
 }
 export default Footer;
