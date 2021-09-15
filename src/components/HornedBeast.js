@@ -29,7 +29,7 @@ class Hornedbeast extends React.Component {
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
                         <Card.Text>
-                            {this.props.description}.<br />Number of Votes {this.state.numOfVotes}
+                            {this.props.description}.<br />Number of Votes! {this.state.numOfVotes}
                         </Card.Text>
                         <Button onClick={this.increasNumOfVotes} variant="primary">Vote</Button>
                     </Card.Body>
