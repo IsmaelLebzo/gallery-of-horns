@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Hornedbeast from "./HornedBeast";
 import BeastArr from "./HornedBeast.json";
 import SelectedBeast from "./SelectedBeast";
@@ -13,6 +14,7 @@ class Main extends React.Component {
       showModal: false,
     };
   }
+
   handleClose = () => {
     this.setState({ showModal: false });
   };
@@ -25,7 +27,7 @@ class Main extends React.Component {
     });
   };
   render() {
-    const newArr = BeastArr.map(Element => {
+    let newArr = BeastArr.map((Element) => {
       return (
         <>
           <Hornedbeast
@@ -36,7 +38,7 @@ class Main extends React.Component {
             horns={Element.horns}
           />
           <SelectedBeast
-            show={this.state.showModal}
+            showModal={this.state.showModal}
             handleClose={this.handleClose}
             showedTitle={this.state.showedTitle}
             showedImg={this.state.showedImg}

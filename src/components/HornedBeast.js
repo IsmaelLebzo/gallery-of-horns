@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+// import SelectedBeast from "./SelectedBeast";
 
 class Hornedbeast extends React.Component {
   constructor(props) {
@@ -16,8 +17,8 @@ class Hornedbeast extends React.Component {
       numOfVotes: this.state.numOfVotes + 1,
     });
   };
-
-  test = () => {
+  
+  test () {
     this.props.show(
       this.props.title,
       this.props.image_url,
@@ -42,7 +43,8 @@ class Hornedbeast extends React.Component {
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>
               {this.props.description}.<br />
-              Number of Votes {this.state.numOfVotes}
+              Number of Votes {this.state.numOfVotes}<br />
+              Number Of Horns is: {this.props.horns}
             </Card.Text>
             <Button onClick={this.increasNumOfVotes} variant="primary">
               Vote
