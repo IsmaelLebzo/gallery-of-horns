@@ -58,5 +58,6 @@ class Hornedbeast extends React.Component {
       </div>
     );
   }
+
 }
 export default Hornedbeast;
