@@ -11,7 +11,7 @@ class FormBeast extends React.Component {
   render() {
     return (
       <>
-        <Form onChange={this.selectedNumber}>
+        <Form onChange={this.numberOfHorns}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Filter</Form.Label>
             <Form.Select aria-label="Default select example">

@@ -16,7 +16,7 @@ class Header extends React.Component {
     });
   };
   render() {
-    let filterArr = BeastArr.filter((value) => {
+    let filterArr = BeastArr.filter(value => {
       if (this.state.numOfHorns !== 0) {
         return value.horns === this.state.numOfHorns;
       } else {
