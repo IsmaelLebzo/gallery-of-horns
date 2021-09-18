@@ -36,6 +36,7 @@ class Main extends React.Component {
             description={Element.description}
             keyword={Element.keyword}
             horns={Element.horns}
+            show={this.show.bind(this)}
           />
           <SelectedBeast
             showModal={this.state.showModal}
